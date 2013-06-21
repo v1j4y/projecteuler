@@ -1,0 +1,5 @@
+lim.irp.f                 : integer                   :: lim                       
+maxpri.irp.f              : integer                   :: maxpri                    
+mult.irp.f                : integer                   :: mult                      
+priexp.irp.f              : integer, allocatable      :: priexp                    (maxpri)
+prim.irp.f                : integer, allocatable      :: prim                      (maxpri)
