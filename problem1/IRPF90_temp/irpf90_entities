@@ -1,0 +1,4 @@
+fact.irp.f                : integer, allocatable      :: fact                      (nfact)
+limit.irp.f               : integer                   :: limit                     
+limit.irp.f               : integer                   :: nfact                     
+sum.irp.f                 : integer                   :: sum                       
