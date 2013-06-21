@@ -1,0 +1,4 @@
+factors.irp.f             : integer, allocatable      :: factors                   (100000)
+factors.irp.f             : integer                   :: j                         
+lgpf.irp.f                : integer                   :: lgpf                      
+number.irp.f              : integer (kind=selected_int_kind(18)) :: number                    

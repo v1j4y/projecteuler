@@ -1,0 +1,3 @@
+subroutine irp_finalize_1703613751
+ use is_palindrome_mod
+end
