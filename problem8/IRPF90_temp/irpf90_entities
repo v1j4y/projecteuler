@@ -1,0 +1,5 @@
+charenum.irp.f            : integer, allocatable      :: charenum                  (50,20)
+maxprod.irp.f             : integer                   :: maxprod                   
+number.irp.f              : integer, allocatable      :: number                    (1000)
+numlist.irp.f             : integer, allocatable      :: numlist                   (1000,5)
+prodlist.irp.f            : integer, allocatable      :: prodlist                  (1000)
