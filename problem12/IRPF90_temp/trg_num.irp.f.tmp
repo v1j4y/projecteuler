@@ -1,0 +1,18 @@
+BEGIN_PROVIDER [integer, trg_num, (10000)]
+    BEGIN_DOC
+    ! get triangular numbers 10000
+    END_DOC
+
+    implicit none
+    integer :: i,j,sum
+
+    sum=1
+    trg_num=0
+    do i=1,10000
+        do j=1,i
+            sum+=j
+        enddo
+        trg_num(i)=sum
+        sum=1
+    enddo
+END_PROVIDER
