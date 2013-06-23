@@ -1,0 +1,3 @@
+list.irp.f                : integer, allocatable      :: list                      (20,20)
+maxprod.irp.f             : integer                   :: maxprod                   
+prodlist.irp.f            : integer, allocatable      :: prodlist                  (2000)
