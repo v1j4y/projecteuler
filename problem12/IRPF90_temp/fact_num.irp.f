@@ -6,20 +6,15 @@
         integer (kind=SELECTED_INT_KIND(18)) :: number
 
         num=1
-        do i=2,int(SQRT(float(number)))
-            call is_prime(i,prim)
-            if(MOD(number,i).eq.0.and.prim)then
-                j=1
-                div=.TRUE.
-                do while(div)
-                    j+=1
-                    if(MOD(number,i**j).ne.0)then
-                        div=.FALSE.
-!                       write(6,*)j
-                        EXIT
-                    endif
-                enddo
-                num+=j
+        do i=2,number
+            if(MOD(number,i).eq.0)then
+                num+=1
+            endif
+        enddo
+
+        do i=2,number+1
+            if(MOD(number,i).eq.0)then
+                num+=1
             endif
         enddo
 

@@ -1,5 +1,5 @@
-SRC += IRPF90_temp/irp_stack.irp.F90 IRPF90_temp/irp_touches.irp.F90 IRPF90_temp/fact_num.irp.F90 IRPF90_temp/fact_num.irp.module.F90 IRPF90_temp/prob12.irp.F90 IRPF90_temp/prob12.irp.module.F90 IRPF90_temp/trg_num.irp.F90 IRPF90_temp/trg_num.irp.module.F90
-OBJ += IRPF90_temp/irp_stack.irp.o IRPF90_temp/fact_num.irp.o IRPF90_temp/fact_num.irp.module.o IRPF90_temp/trg_num.irp.o IRPF90_temp/trg_num.irp.module.o
+SRC += IRPF90_temp/irp_stack.irp.F90 IRPF90_temp/irp_touches.irp.F90 IRPF90_temp/fact_num.irp.F90 IRPF90_temp/fact_num.irp.module.F90 IRPF90_temp/prob12.irp.F90 IRPF90_temp/prob12.irp.module.F90 IRPF90_temp/trg_num.irp.F90 IRPF90_temp/trg_num.irp.module.F90 IRPF90_temp/is_prime.irp.F90 IRPF90_temp/is_prime.irp.module.F90
+OBJ += IRPF90_temp/irp_stack.irp.o IRPF90_temp/fact_num.irp.o IRPF90_temp/fact_num.irp.module.o IRPF90_temp/trg_num.irp.o IRPF90_temp/trg_num.irp.module.o IRPF90_temp/is_prime.irp.o IRPF90_temp/is_prime.irp.module.o
 OBJ1 = $(patsubst %, IRPF90_temp/%,$(notdir $(OBJ))) IRPF90_temp/irp_touches.irp.o 
 ALL = prob12
 ALL_OBJ = prob12.irp.module.o prob12.irp.o
@@ -12,7 +12,8 @@ prob12: IRPF90_temp/prob12.irp.o IRPF90_temp/prob12.irp.module.o $(OBJ1)
 IRPF90_temp/fact_num.irp.o: IRPF90_temp/fact_num.irp.module.o  
 IRPF90_temp/prob12.irp.o: IRPF90_temp/prob12.irp.module.o  IRPF90_temp/trg_num.irp.module.o 
 IRPF90_temp/trg_num.irp.o: IRPF90_temp/trg_num.irp.module.o  
-IRPF90_temp/irp_touches.irp.o:  IRPF90_temp/fact_num.irp.o IRPF90_temp/fact_num.irp.o  IRPF90_temp/trg_num.irp.o IRPF90_temp/trg_num.irp.o
+IRPF90_temp/is_prime.irp.o: IRPF90_temp/is_prime.irp.module.o  
+IRPF90_temp/irp_touches.irp.o:  IRPF90_temp/fact_num.irp.o IRPF90_temp/fact_num.irp.o  IRPF90_temp/trg_num.irp.o IRPF90_temp/trg_num.irp.o  IRPF90_temp/is_prime.irp.o IRPF90_temp/is_prime.irp.o
 IRPF90_temp/%.irp.module.o: IRPF90_temp/%.irp.module.F90
 	$(FC) $(FCFLAGS) -c IRPF90_temp/$*.irp.module.F90 -o IRPF90_temp/$*.irp.module.o
 IRPF90_temp/%.irp.o: IRPF90_temp/%.irp.module.o IRPF90_temp/%.irp.F90

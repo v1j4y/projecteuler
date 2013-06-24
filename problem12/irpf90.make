@@ -10,7 +10,7 @@ prob12: IRPF90_temp/prob12.irp.o IRPF90_temp/prob12.irp.module.o $(OBJ1)
 	$(FC) -o $@ IRPF90_temp/$@.irp.o IRPF90_temp/$@.irp.module.o $(OBJ1) $(LIB)
 	@$(MAKE) -s move
 IRPF90_temp/fact_num.irp.o: IRPF90_temp/fact_num.irp.module.o  
-IRPF90_temp/prob12.irp.o: IRPF90_temp/prob12.irp.module.o  IRPF90_temp/trg_num.irp.module.o 
+IRPF90_temp/prob12.irp.o: IRPF90_temp/prob12.irp.module.o  
 IRPF90_temp/trg_num.irp.o: IRPF90_temp/trg_num.irp.module.o  
 IRPF90_temp/is_prime.irp.o: IRPF90_temp/is_prime.irp.module.o  
 IRPF90_temp/irp_touches.irp.o:  IRPF90_temp/fact_num.irp.o IRPF90_temp/fact_num.irp.o  IRPF90_temp/trg_num.irp.o IRPF90_temp/trg_num.irp.o  IRPF90_temp/is_prime.irp.o IRPF90_temp/is_prime.irp.o
