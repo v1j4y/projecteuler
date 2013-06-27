@@ -1,1 +1,1 @@
-trg_num.irp.f             : integer(kind=SELECTED_INT_KIND(18)), allocatable :: trg_num                   (10000)
+sieve.irp.f               : logical, allocatable      :: sieve                     (100000)

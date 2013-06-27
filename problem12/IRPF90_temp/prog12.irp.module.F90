@@ -6,5 +6,5 @@
 !           DO NOT MODIFY IT BY HAND            !
 !-----------------------------------------------!
 
-module is_prime_mod
-end module is_prime_mod
+module prog12_mod
+end module prog12_mod

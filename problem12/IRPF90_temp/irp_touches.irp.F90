@@ -1,9 +1,8 @@
-subroutine irp_finalize_1013405484
- use fact_num_mod
- use trg_num_mod
- use is_prime_mod
-  if (allocated(trg_num)) then
-    trg_num_is_built = .False.
-    deallocate(trg_num)
+subroutine irp_finalize_2055191370
+ use sieve_mod
+ use divisors_mod
+  if (allocated(sieve)) then
+    sieve_is_built = .False.
+    deallocate(sieve)
   endif
 end

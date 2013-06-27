@@ -6,5 +6,7 @@
 !           DO NOT MODIFY IT BY HAND            !
 !-----------------------------------------------!
 
-module fact_num_mod
-end module fact_num_mod
+module sieve_mod
+  logical, allocatable :: sieve (:)
+  logical :: sieve_is_built = .False.
+end module sieve_mod
